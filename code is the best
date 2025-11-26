@@ -1,0 +1,19 @@
+int main(){
+int num,i,sum=0; //variables deciaration
+    scanf("%d",&num);//getting input from user at runtime
+    for(i=1;i<num;i=i+1)
+    {
+        if(num%i==0)
+        sum=sum+i;
+    }
+    if(num==sum)
+    {
+printf("%d is a perfect number",num);
+    }
+    else
+    {
+    printf("%d is not a perfect number",num);
+    }
+    
+    return 0;
+}
