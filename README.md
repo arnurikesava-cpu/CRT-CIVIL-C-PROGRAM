@@ -41,3 +41,33 @@ void main()
     }
 
 }
+  new code positive number code
+  #include <stdio.h>
+int main()
+{
+    int n, num, sum = 0, rem, fact, i;
+    scanf("%d", &n);
+    num = n;
+    while (n > 0)
+    {
+        rem = n % 10;
+        fact = 1;
+        i = 1;
+        while (i <= rem)
+        {
+            fact = fact * i;
+            i++;
+        }
+        sum = sum + fact;
+        n = n / 10;
+    }
+    if (sum == num)
+    {
+        printf("%d is a strong number", num);
+    }
+    else
+    {
+        printf("%d is not a strong number", num);
+    }
+    return 0;
+}
