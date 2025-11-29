@@ -71,3 +71,22 @@ int main()
     }
     return 0;
 }
+  code of the  factor of the -
+
+  #include <stdio.h>
+
+int facto(int i) {
+    if (i == 0) {
+        return 1;
+    } else {
+        return i * facto(i - 1);
+    }
+}
+
+int main() {
+    int n, j;
+    scanf("%d", &n);
+    j = facto(n);
+    printf("%d\n", j); // Print factorial result
+    return 0;
+}
